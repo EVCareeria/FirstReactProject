@@ -6,7 +6,9 @@
     "react": "^16.11.0",
     "react-clock": "^2.4.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "react-http-request": "^2.0.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.3"
   },
   "scripts": {
     "start": "react-scripts start",

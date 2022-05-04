@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import Clock from 'react-clock';
+import Helpit from './Helpit';
 
 class Kello extends Component {
     render() {
@@ -17,7 +17,6 @@ class DigitalWatch extends Component {
         this.state = {
             time: new Date().toLocaleTimeString(),
             date: new Date().toLocaleDateString(),
-            pvm: new Date()
         };
     }
 
@@ -32,7 +31,6 @@ class DigitalWatch extends Component {
         this.setState({
             time: new Date().toLocaleTimeString(),
             date: new Date().toLocaleDateString(),
-            pvm: new Date()
         });
     }
 
@@ -45,8 +43,8 @@ class DigitalWatch extends Component {
             <div className="digitaalikello">
                 {/* <p>Kellonaika: {this.state.time} </p> */}
                 {/* <p>Päivämäärä: {this.state.date} </p> */}
+                <Helpit moduli="DigitalWatch" />
                 <Kello kellonaika={this.state.time} />
-                <Clock value={this.state.pvm} />
             </div>
     );
   }

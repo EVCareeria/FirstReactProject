@@ -3,14 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter } from 'react-router-dom';
 import Viestit from './Viestit';
+import AnalogWatch from './AnalogWatch';
+import TypicodeFetch from './TypicodeFetch';
+import NWCustomerFetch from './NWCustomerFetch';
+import Navigaatio from './Navigaatio';
 
-ReactDOM.render(<div>
-    <App />
-    <Viestit />
-    <App />
-    <App />
-    </div>
+ReactDOM.render(
+    <BrowserRouter>
+        <Navigaatio />
+    </BrowserRouter>
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
